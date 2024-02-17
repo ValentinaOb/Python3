@@ -58,7 +58,7 @@ def ex1 ():
 
     print ("Input: ")
 
-    for i in range((int)(3)):          
+    for i in range((int)(10)):          
          b =[]
          for j in range((int)(1)):      
              b.append(int(input()))
@@ -81,7 +81,6 @@ def ex1 ():
     print ("2 & 3: "+ k[1]+" "+k[2])
     print ("1 & 2: "+k[0]+" "+k[1])        
         
-
 def ex2 ():
     words = {}
     words1 = {}
@@ -92,9 +91,7 @@ def ex2 ():
         w1 = input("W1: ")
 
         words[w] = w1
-        #words1[w1] = w
 
-    #dict(map(reversed, words.items()))
     words = dict(map(reversed, words.items()))
     key = input("Word: ")
     
