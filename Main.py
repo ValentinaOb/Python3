@@ -45,13 +45,14 @@ def ex ():
                 r[j] = temp
  
     print ("R: ", r)
-
+'''
 def name(a):
     b=''
     for i in a:
         if(i is not int):
             b=i
     return b      
+'''
 
 def ex1 ():
     word = {}
