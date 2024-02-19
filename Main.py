@@ -54,6 +54,39 @@ def name(a):
     return b      
 
 def ex1 ():
+    word = {}
+
+    for i in range(10):
+        w = input("W: ")
+        w1 = int(input("W1: "))
+
+        word[w] = w1
+    word = dict(map(reversed, word.items()))
+    word=dict(sorted(word.items()))
+    print ("\nA: "+ str(word))  
+        
+    word = dict(reversed(list(word.items())))
+    print ("A: "+ str(word)) 
+    iterator=iter(word)
+    p1=next(iterator)
+    p2=next(iterator)
+    p3=next(iterator)
+
+    print ("\nChampion: "+ word.get(p1))  
+    print ("2 & 3: "+ word.get(p2)+" "+word.get(p3))
+    print ("1 & 2: "+word.get(p1)+" "+word.get(p2))
+    
+        
+    '''
+    iter1=iter(word)
+    iter2=iter(word)
+    
+    print ("A: "+word)
+    print ("\nChampion: "+ next(iter1))  
+    print ("2 & 3: "+ next(iter1)+" "+next(iter1))
+    print ("1 & 2: "+next(iter2)+" "+next(iter2))
+'''
+    '''
     a=[]
 
     print ("Input: ")
@@ -80,10 +113,10 @@ def ex1 ():
     print ("\nChampion: "+ k[0])
     print ("2 & 3: "+ k[1]+" "+k[2])
     print ("1 & 2: "+k[0]+" "+k[1])        
-        
+        '''
+    
 def ex2 ():
     words = {}
-    words1 = {}
     n = int(input("N: "))
 
     for i in range(n):
